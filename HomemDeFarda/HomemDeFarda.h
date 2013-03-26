@@ -13,3 +13,7 @@
 - (NSString *) salva;
 
 @end
+
+@interface HomemDeFarda : NSObject
+
+@end

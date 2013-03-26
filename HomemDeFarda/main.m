@@ -16,10 +16,18 @@
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        Bombeiro * bombeiro = [[Bombeiro alloc] init];
-        Policial * policial = [[Policial alloc] init];
-        Marinheiro * marinheiro = [[Marinheiro alloc] init];
-        NSLog(@"\n%@\n%@\n%@", [bombeiro salva], [policial salva], [marinheiro salva]);
+        
+        id <HomemDeFarda> homem;
+        
+        homem = [[Bombeiro alloc] init];
+        NSLog(@"%@\n", [homem salva]);
+        
+        homem = [[Policial alloc] init];
+        NSLog(@"%@\n", [homem salva]);
+        
+        homem = [[Marinheiro alloc] init];
+        NSLog(@"%@\n", [homem salva]);
+
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "HomemDeFarda.h"
 
-@interface Policial : NSObject <HomemDeFarda>
+@interface Policial:NSObject <HomemDeFarda>
 
 @end
